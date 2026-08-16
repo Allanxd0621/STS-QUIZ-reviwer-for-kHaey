@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TOPIC 3 reviewer Ni khayi 🌸</title>
+  <title>STS Lesson 4 Reviewer 🌸</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Audio Background with automatic loop -->
-  <audio src="katorse.mp3" id="kanta" loop></audio>
+  <audio src="kung.mp3" id="kanta" loop></audio>
 
   <!-- Cute Carnation Floating Header Images -->
   <div class="pic">
@@ -25,13 +25,12 @@
   <div class="container">
     <header>
       <div class="carnation-header-decor">🌺 🌸 🌺</div>
-      <h1>Ge Elek paras mga wala gi tangkelek</h1>
-      <p>atong lesson is <strong>Topic 3 well you be with me<strong> <br></p>
+      <h1>STS Lesson 4</h1>
+      <p>Science, Technology & Society: <strong>Nation Building & Historical Development</strong> <br></p>
       
-      <!-- Tab Navigation Updated for 30-Question Files (60 Total) -->
+      <!-- Tab Navigation -->
       <div class="tab-buttons">
-        <button class="tab-btn active" onclick="switchFile(1)">Topic 3 (1–30)</button>
-        
+        <button class="tab-btn active" onclick="switchFile(1)">STS Lesson 4 (1–30)</button>
       </div>
     </header>
 
@@ -66,15 +65,297 @@
         <img src="carnation.jpg" class="pics" alt="Congratulations Picture">
       </div>
       <h1>bang 🌸</h1>
-      <p id="congrats-score-text">You got a PERFECT SCORE (30 / 30)! 🏆🌺</p>
+      <p id="congrats-score-text">You got a PERFECT SCORE! 🏆🌺</p>
       <p>LDR is the best jud ha </p>
       <button onclick="closeCongrats()"> maypang manghud mo i miss you ang ate tawn char</button>
     </div>
   </div>
 
-  <a href="topic4.html">Topic 4</a>
-  <a href="index.html">TOPIc 5</a>
+  <script>
+    // Audio looping playback on first interaction
+    document.addEventListener('click', () => {
+      const audio = document.getElementById('kanta');
+      if (audio) {
+        audio.loop = true;
+        if (audio.paused) {
+          audio.play().catch(() => {});
+        }
+      }
+    }, { once: true });
 
-  <script src="topic3script.js"></script>
+    const topicData = [
+      // --- HISTORICAL ERAS (PRE-SPANISH, SPANISH, AMERICAN, REBUILDING) ---
+      {
+        question: "What refers to constructing or structuring a national identity using the power of the state?",
+        options: ["Nation-building", "Colonization", "Industrialization", "Global trade"],
+        correct: 0
+      },
+      {
+        question: "During the Pre-Spanish period, early inhabitants wrote on tree barks using knives/daggers as pens with what syllabary writing system consisting of 17 symbols?",
+        options: ["Baybayin / Alibata", "Latin Script", "Hieroglyphics", "Cuneiform"],
+        correct: 0
+      },
+      {
+        question: "In Pre-Spanish society, which social class was composed of real slaves?",
+        options: ["Nobles", "Freemen", "Aliping Namamahay", "Aliping Sagigilid"],
+        correct: 3
+      },
+      {
+        question: "How did early Filipinos use science in their daily lives prior to Spanish arrival?",
+        options: ["Interpreting celestial movements to predict seasons/climates and planting crops", "Using steam engines for transport", "Building high-rise stone towers", "Operating central laboratories"],
+        correct: 0
+      },
+      {
+        question: "Which government-monopolized trade system connected Manila and Acapulco, Mexico from 1565 to 1815?",
+        options: ["Galleon Trade", "Silk Road Trade", "Spice Route Trade", "Triangular Trade"],
+        correct: 0
+      },
+      {
+        question: "What primary factor during the Spanish Period halted the growth of science in the country?",
+        options: ["Superstitious beliefs and Catholic doctrines", "Lack of natural resources", "Foreign invasion by Americans", "Destruction of all sea ports"],
+        correct: 0
+      },
+      {
+        question: "During the American Period, basic science education primarily focused on:",
+        options: ["Nature studies, science, and sanitation", "Nuclear power formulation", "E-commerce and software", "Heavy machinery engineering"],
+        correct: 0
+      },
+      {
+        question: "What major health and infrastructure improvements were established under American rule?",
+        options: ["Hospitals, public clinics, hygiene standards, roads, and bridges", "Galleon shipbuilding yards", "Biofuel power grids", "Space research centers"],
+        correct: 0
+      },
+
+      // --- PRESIDENTIAL S&T POLICIES (1 to 22) ---
+      {
+        question: "Who emphasized the role of Science and Technology (S&T) in national development?",
+        options: ["Corazon C. Aquino", "Fidel V. Ramos", "Ferdinand E. Marcos, Sr.", "Joseph E. Estrada"],
+        correct: 2
+      },
+      {
+        question: "Who mandated the Department of Education and Culture (DEC) to promote science courses in public high schools?",
+        options: ["Ferdinand E. Marcos, Sr.", "Gloria M. Arroyo", "Benigno C. Aquino III", "Fidel V. Ramos"],
+        correct: 0
+      },
+      {
+        question: "Who established S&T agencies and organizations during his administration?",
+        options: ["Rodrigo R. Duterte", "Ferdinand E. Marcos, Sr.", "Joseph E. Estrada", "Corazon C. Aquino"],
+        correct: 1
+      },
+      {
+        question: "Who renamed the National Science and Technology Authority (NSTA) to the Department of Science and Technology (DOST)?",
+        options: ["Fidel V. Ramos", "Gloria M. Arroyo", "Corazon C. Aquino", "Benigno C. Aquino III"],
+        correct: 2
+      },
+      {
+        question: "Who emphasized the role of S&T in sustainable economic recovery and growth of the country?",
+        options: ["Corazon C. Aquino", "Joseph E. Estrada", "Rodrigo R. Duterte", "Ferdinand E. Marcos, Sr."],
+        correct: 0
+      },
+      {
+        question: "Who upgraded the production sector, improved research activities, and developed infrastructures?",
+        options: ["Gloria M. Arroyo", "Corazon C. Aquino", "Fidel V. Ramos", "Benigno C. Aquino III"],
+        correct: 1
+      },
+      {
+        question: "Who directed the DOE, DOST, and PNRI to formulate a comprehensive nuclear power program for the country?",
+        options: ["Fidel V. Ramos", "Ferdinand E. Marcos, Sr.", "Joseph E. Estrada", "Rodrigo R. Duterte"],
+        correct: 0
+      },
+      {
+        question: "Who implemented the Doctors to the Barrio Program?",
+        options: ["Corazon C. Aquino", "Fidel V. Ramos", "Gloria M. Arroyo", "Benigno C. Aquino III"],
+        correct: 1
+      },
+      {
+        question: "Who established the Gifted Filipino Children in S&T program?",
+        options: ["Ferdinand E. Marcos, Sr.", "Fidel V. Ramos", "Benigno C. Aquino III", "Gloria M. Arroyo"],
+        correct: 1
+      },
+      {
+        question: "Who mandated laws and statutes related to the S&T sector?",
+        options: ["Fidel V. Ramos", "Rodrigo R. Duterte", "Joseph E. Estrada", "Corazon C. Aquino"],
+        correct: 0
+      },
+      {
+        question: "Who legislated the Philippine Clean Air Act of 1999 and the Ecological Solid Waste Management Act of 2000?",
+        options: ["Gloria M. Arroyo", "Joseph E. Estrada", "Fidel V. Ramos", "Benigno C. Aquino III"],
+        correct: 1
+      },
+      {
+        question: "Who launched a full-scale program based on cost-effective irrigation technologies?",
+        options: ["Joseph E. Estrada", "Ferdinand E. Marcos, Sr.", "Rodrigo R. Duterte", "Corazon C. Aquino"],
+        correct: 0
+      },
+      {
+        question: "Who was associated with the implementation of dole-outs during his administration?",
+        options: ["Benigno C. Aquino III", "Fidel V. Ramos", "Joseph E. Estrada", "Gloria M. Arroyo"],
+        correct: 2
+      },
+      {
+        question: "Who promoted S&T as a golden age during the administration?",
+        options: ["Gloria M. Arroyo", "Corazon C. Aquino", "Ferdinand E. Marcos, Sr.", "Rodrigo R. Duterte"],
+        correct: 0
+      },
+      {
+        question: "Who promoted the Philippines as an Innovation Hub in Asia (Filipinnovation)?",
+        options: ["Benigno C. Aquino III", "Gloria M. Arroyo", "Joseph E. Estrada", "Fidel V. Ramos"],
+        correct: 1
+      },
+      {
+        question: "Who promulgated the Biofuels Act of 2006?",
+        options: ["Corazon C. Aquino", "Gloria M. Arroyo", "Rodrigo R. Duterte", "Ferdinand E. Marcos, Sr."],
+        correct: 1
+      },
+      {
+        question: "Who imposed Republic Act 10601, which improves the Agriculture and Fisheries Sector through Mechanization (AFMech)?",
+        options: ["Gloria M. Arroyo", "Benigno C. Aquino III", "Fidel V. Ramos", "Joseph E. Estrada"],
+        correct: 1
+      },
+      {
+        question: "Who implemented the eVAT Law?",
+        options: ["Rodrigo R. Duterte", "Gloria M. Arroyo", "Joseph E. Estrada", "Corazon C. Aquino"],
+        correct: 1
+      },
+      {
+        question: "Who amended the National Health Insurance Act of 1995?",
+        options: ["Benigno C. Aquino III", "Gloria M. Arroyo", "Fidel V. Ramos", "Corazon C. Aquino"],
+        correct: 0
+      },
+      {
+        question: "Who approved the K+12 education program and signed the DICT Act of 2015?",
+        options: ["Joseph E. Estrada", "Rodrigo R. Duterte", "Benigno C. Aquino III", "Ferdinand E. Marcos, Sr."],
+        correct: 2
+      },
+      {
+        question: "During whose administration was the focus of DOST placed on putting Research and Development (R&D) into commercialization?",
+        options: ["Rodrigo R. Duterte", "Benigno C. Aquino III", "Fidel V. Ramos", "Gloria M. Arroyo"],
+        correct: 0
+      },
+      {
+        question: "Who signed the Freedom of Information Order, Build! Build! Build! Program, and TRAIN Law?",
+        options: ["Benigno C. Aquino III", "Rodrigo R. Duterte", "Joseph E. Estrada", "Fidel V. Ramos"],
+        correct: 1
+      }
+    ];
+
+    // Helper to return current active dataset
+    function getCurrentQuestions() {
+      return topicData;
+    }
+
+    // Render questions dynamically inside the wrapper
+    function renderQuestions() {
+      const wrapper = document.getElementById('questions-wrapper');
+      if (!wrapper) return;
+      wrapper.innerHTML = '';
+
+      const currentQuestions = getCurrentQuestions();
+
+      currentQuestions.forEach((q, qIdx) => {
+        const qCard = document.createElement('div');
+        qCard.className = 'question-item';
+
+        let optionsHtml = '';
+        q.options.forEach((opt, oIdx) => {
+          optionsHtml += `
+            <label class="option-label" id="opt-label-${qIdx}-${oIdx}">
+              <input type="radio" name="question-${qIdx}" value="${oIdx}">
+              <span>${opt}</span>
+            </label>
+          `;
+        });
+
+        qCard.innerHTML = `
+          <div class="q-title">${qIdx + 1}. ${q.question}</div>
+          <div class="options-list">${optionsHtml}</div>
+        `;
+
+        wrapper.appendChild(qCard);
+      });
+    }
+
+    // Switch files / tabs
+    function switchFile(fileNum) {
+      document.querySelectorAll('.tab-btn').forEach((btn, idx) => {
+        btn.classList.toggle('active', idx + 1 === fileNum);
+      });
+      renderQuestions();
+    }
+
+    // Validate answers and calculate score
+    function checkAnswers() {
+      const currentQuestions = getCurrentQuestions();
+      let score = 0;
+
+      currentQuestions.forEach((q, qIdx) => {
+        const selected = document.querySelector(`input[name="question-${qIdx}"]:checked`);
+        
+        // Clear previous marks
+        q.options.forEach((_, oIdx) => {
+          const lbl = document.getElementById(`opt-label-${qIdx}-${oIdx}`);
+          if (lbl) lbl.classList.remove('correct-mark', 'wrong-mark');
+        });
+
+        if (selected) {
+          const val = parseInt(selected.value, 10);
+          if (val === q.correct) {
+            score++;
+            const correctLabel = document.getElementById(`opt-label-${qIdx}-${val}`);
+            if (correctLabel) correctLabel.classList.add('correct-mark');
+          } else {
+            const wrongLabel = document.getElementById(`opt-label-${qIdx}-${val}`);
+            const correctLabel = document.getElementById(`opt-label-${qIdx}-${q.correct}`);
+            if (wrongLabel) wrongLabel.classList.add('wrong-mark');
+            if (correctLabel) correctLabel.classList.add('correct-mark');
+          }
+        } else {
+          // Highlight correct answer if left unanswered
+          const correctLabel = document.getElementById(`opt-label-${qIdx}-${q.correct}`);
+          if (correctLabel) correctLabel.classList.add('correct-mark');
+        }
+      });
+
+      const total = currentQuestions.length;
+
+      if (score === total) {
+        const congratsText = document.getElementById('congrats-score-text');
+        if (congratsText) {
+          congratsText.innerText = `You got a PERFECT SCORE (${score} / ${total})! 🏆🌺`;
+        }
+        const congratsScene = document.getElementById('congrats-scene');
+        if (congratsScene) congratsScene.classList.remove('hidden');
+      } else {
+        const scoreDisplay = document.getElementById('score-display');
+        if (scoreDisplay) scoreDisplay.innerText = `${score} / ${total}`;
+
+        const modalMessage = document.getElementById('modal-message');
+        if (modalMessage) {
+          if (score >= Math.ceil(total * 0.7)) {
+            modalMessage.innerText = "Hays di nasad perfect ha? asa diay ko nag kuwang? aw typo da Lapit naka ma perfect oh ako nalang kuwang aw guba jung keyboard katog na khaey";
+          } else {
+            modalMessage.innerText = "Mao na lahi man gud huna hunaon";
+          }
+        }
+
+        const scoreModal = document.getElementById('score-modal');
+        if (scoreModal) scoreModal.classList.remove('hidden');
+      }
+    }
+
+    // Modal closing functions
+    function closeModal() {
+      const modal = document.getElementById('score-modal');
+      if (modal) modal.classList.add('hidden');
+    }
+
+    function closeCongrats() {
+      const scene = document.getElementById('congrats-scene');
+      if (scene) scene.classList.add('hidden');
+    }
+
+    // Initialize quiz when DOM is loaded
+    document.addEventListener('DOMContentLoaded', renderQuestions);
+  </script>
 </body>
 </html>
